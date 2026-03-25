@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: App-Cache
+
+  datasource:
+    url: "jdbc:mysql://localhost:3306/test_db"
+    username: "*****"
+    password: "********"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  cache:
+    type: redis
+
+  redis:
+    host: localhost
+    port: 6379
+
+  logging:
+    level:
+      root: INFO
+      org.springframework.cache: INFO
